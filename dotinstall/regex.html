@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>oha</title>
+  </head>
+  <body>
+
+  </body>
+  <script type="text/javascript">
+    var s = "<title>hogehogehogehoge</title>";
+    var rs = s.match(/^<title>(.*)<\/title>$/);
+    if (rs) {
+      console.log(rs[0]);
+      console.log(rs[1]);
+      console.log('マッチしました');
+    } else {
+      console.log('何もマッチせんかったよ');
+    }
+    var addressNumber = "101/0063";
+    var rs2 = addressNumber.match(/\d{3}\/\d{4}/);
+    if (rs2) {
+      console.log('これは郵便番号やで');
+    } else {
+      console.log('これは郵便番号とちゃう！')
+    }
+    </script>
+</html>

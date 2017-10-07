@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>JavaScriptの練習 </title>
+</head>
+<body>
+  <script>
+  function hello (name){
+    return "hello" + name ;
+  }
+  function isMiki(name) {
+    return name === "Miki";
+  }
+  function primeNumber (num) {
+
+    //2 は素数なので true を返す
+    if(num === 2) {
+      return true;
+    } else {
+
+      for(i = 2; i < num; i++) {
+
+        //2以上の数で割ったとき余りが0になれば false を返す。つまり素数ではない。
+        if(num % i === 0) {
+          return false;
+          break;
+        }
+
+        //ループが最後まで行く、つまり割れる数がなかったら true を返す。つまり素数。
+        if(i + 1 === num) {
+          return true;
+        }
+      }
+    }
+  }
+  </script>
+</body>
+</html>
